@@ -7,20 +7,23 @@ class ChannelSet extends Set {
 		if(!(client instanceof tmijsClient)) {
 			throw new TypeError('parameter 1 is not of type \'tmijs.client\'.');
 		}
+		
 		super(client.channels || []);
+		
 		this.client = client;
 		
-		this.client.on('join', (channel, username, self) => {
+		this.client
+		.on('join', (channel, username, self) => {
 			if(self) {
 				this.add(channel);
 			}
-		});
-		this.client.on('part', (channel, username, self) => {
+		})
+		.on('part', (channel, username, self) => {
 			if(self) {
 				this.delete(channel);
 			}
-		});
-		this.client.on('disconnected', reason => {
+		})
+		.on('disconnected', reason => {
 			this.clear();
 		});
 	}
