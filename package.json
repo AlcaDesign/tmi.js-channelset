@@ -1,0 +1,31 @@
+{
+  "name": "tmi.js-channelset",
+  "version": "0.1.0",
+  "description": "A simple way to track tmi.js channels.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+      "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlcaDesign/tmi.js-channelset.git"
+  },
+  "keywords": [
+    "tmi.js",
+    "channels",
+    "set",
+    "track"
+  ],
+  "author": "Jacob \"Alca\" Foster",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlcaDesign/tmi.js-channelset/issues"
+  },
+  "homepage": "https://github.com/AlcaDesign/tmi.js-channelset#readme",
+  "dependencies": {
+    "tmi.js": "^1.1.1"
+  }
+}
