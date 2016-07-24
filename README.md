@@ -1,8 +1,7 @@
 # What
 
 This module tracks channels joins, channels parts, and client disconnects as a
-[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_O
-bjects/Set) instance.
+[Set](https://mdn.io/Set) instance.
 
 # Install
 
