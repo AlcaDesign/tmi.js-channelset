@@ -1,13 +1,14 @@
 # What
 
-This module tracks channels joins, channels parts, and client disconnects as a
-[Set](https://mdn.io/Set) instance.
+This module tracks [tmi.js](https://npmjs.com/tmi.js) channel joins, channel
+parts, and client disconnects as a [Set](https://mdn.io/Set) instance.
 
 # Install
 
 ```
-$ npm install tmi.js-channelset
+$ npm install --save tmi.js-channelset
 ```
+
 
 # Usage
 
@@ -19,6 +20,7 @@ let client = new tmijs.client({
 		}),
 	channels = ChannelSet(client);
 ```
+
 
 # Example
 
